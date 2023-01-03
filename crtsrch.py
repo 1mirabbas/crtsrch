@@ -45,7 +45,7 @@ try:
     value = input('Please select the mode: ')
     value=int(value)
 except ValueError:
-    prRed('Pleace duzgun reqem yaz')
+    prRed('Error')
 
 
 if domain is None:
