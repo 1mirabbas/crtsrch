@@ -65,6 +65,8 @@ else:
                 a=i['common_name']
                 a=str(a)
                 print(a.replace('*.', ''))
+        else:
+            prRed('''Please choose the mode properly''')
     else:
         with open(output, "a") as f:
             if value == 1:
@@ -82,3 +84,6 @@ else:
                     d=str(d)
                     m=d.replace('*.', '')
                     f.write(m+'\n')
+            else:
+                prRed('''Please choose the mode properly''')
+
