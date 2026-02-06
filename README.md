@@ -25,10 +25,11 @@ pip3 install -r requirements.txt
 
 ## Usage
 
-Short Form    | Description
-------------- |----------------------------------------------------------
--d            | Domain in which you want to find subdomains.
--o            | Output file name in which you need to save the results.
+Short Form    | Long Form   | Description
+------------- | ---------- | ----------------------------------------------------------
+-d            |            | Domain in which you want to find subdomains.
+-o            |            | Output file name in which you need to save the results.
+-t            | --timeout  | Request timeout in seconds (default: 90). Use for slow or large domains.
 
 
 
@@ -46,5 +47,10 @@ python3 crtsrch.py -d example.com
 * To save the results in (output.txt) file:
 ```
 python3 crtsrch.py -d example.com -o output.txt
+```
+
+* To use a longer timeout (e.g. 120 seconds) for slow responses:
+```
+python3 crtsrch.py -d example.com -t 120
 ```
 
