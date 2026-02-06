@@ -54,3 +54,9 @@ python3 crtsrch.py -d example.com -o output.txt
 python3 crtsrch.py -d example.com -t 120
 ```
 
+## Screenshot
+
+Example run for `tesla.com` with mode 2 (strip `*.` prefix) and 120s timeout:
+
+![crtsrch usage](screenshot.png)
+
